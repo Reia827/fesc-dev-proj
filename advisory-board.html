@@ -1,32 +1,57 @@
 <!doctype html>
-<html class="no-js" lang="en">
-
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, intial-scale=1.0">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Florida Energy Systems Consortium</title>
   <meta name="keywords" content="energy, consortium, solar, nuclear, florida, college, university, research, facilities, industry, education, jobs, training">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <link rel="stylesheet" href="css/normalize.css"> <!--https://necolas.github.io/normalize.css/8.0.0/normalize.css -->
-  <link rel="stylesheet" href="../styles.css">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+ 	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<title>Florida Energy Systems Consortium</title>
 </head>
 
 <body>
 	<!--showcase image here -->
 	<!--logo here -->
 	<!--motto here -->
-    <header>Florida Energy Systems Consortium</header> <!--add header-->
-    <nav>   <a href="index.html">home</a>
-            <a href="">education</a>
-            <a href="">energy industry</a>
-						<a href="">facilities</a>
-						<a href="">jobs</a>
-            <a href="outreach.html">outreach</a>
-						<a class="active">people</a>
-            <a href="">research</a>
-	</nav>
+   <div class="wrapper">
+      <header>Florida Energy Systems Consortium</header> 
+    <form class="search">
+    	<div>
+    		<input type="search" placeholder="Search Our Site">
+    		<button type="submit" value="">Search</button>
+    	</div>
+    </form>
+    <nav class="main-nav">
+          <ul>
+           <li>
+           <a href="index.html">home</a>
+           </li>
+           <li>
+           <a href="">education</a>
+           </li>
+           <li>
+           <a href="">facilities</a>
+           </li>
+					 <li>
+					 <a href="">industry</a>
+					 </li>
+					 <li>
+          <a href="">jobs</a>
+          </li>
+           <li>
+           <a href="outreach.html">outreach</a>
+           </li>
+					 <li>
+          <a href="people.html">people</a>
+          </li>
+           <li>
+           <a href="">research</a>
+           </li>
+   			</ul>
+    </nav> 
  
 <!--add search bar-->
     
@@ -164,28 +189,40 @@
     
 <p>Paul Zombo has been working in the fields of Metallurgy, Failure Analysis and NDE for thirty years since earning a degree in Metallurgical Engineering. His areas of involvement include: welding, casting, forging, coating, machining, repair, and materials development used in power generation, aerospace, and heavy industry. Work experience includes 24 years at Siemens Power Generation, 4 years at Kennedy Space Center and 5 years at Timken Steel Manufacturing working on turbines, generators, space vehicles, payloads, launch structures, launch support equipment, steel processing, steel finishing, and automation. Paul has accumulated 36 patents & 29 publications in the fields of NDE, in-situ inspection, welding and metallurgy. Paul was honored as “Siemens Inventor of the Year 2009” for outstanding innovation.</p>
     
-		<div class="social">
-	<ul> <!--add font awesome link in head-->
-            <li><a href="http://twitter.com"><i class="fa fa-twitter"></i></a></li> <!--add trick from class-->
-            <li><a href="http://facebook.com"><i class="fa fa-facebook"></i></a></li> <!--add trick from class-->
-            <li><a href="http://linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-	</ul>
+		<section class="boxes">
+			<div class="social-box">
+          <i class="fab fa-twitter fa-3x"></i> <!--add trick from class-->
+         
+			</div>
+     			<div class="social-box">
+         <i class="fab fa-facebook-f fa-3x"></i> <!--add trick from class-->
+       
+			</div>     	
+          <div class="social-box">
+          <i class="fab fa-linkedin fa-3x"></i> <!--add trick from class-->
+     
+			</div>          
+	</section>
+	
+	<div class="email">Subscribe to our newsletter
+	 <form>
+              <input type="text" class="form-control input-lg" placeholder="Enter Email">
+              <br />
+              <button class="btn btn-primary btn-lg btn-block">Submit</button>
+            </form>
 	</div>
-	 	</div>
 	
 	<!--body grid ends here -->
-     <footer>
-	<!--footer grid starts here -->		 
-			<div class="wrapper-2"> 
-			<div class="about">About Us</div>
-			<div class="contact">Contact Us</div>
-			<div class="faq">FAQ</div>
-      <div class="container">
-          <p>Copyright &copy; 2018 Florida Energy Systems Consortium </p>
-      </div>
-			 </div>
-			 <!--footer grid ends here-->
-    </footer>
+   <footer>
+   <nav class="end-nav">
+	 		<ul>
+	 			<li><a href="#">About Us</a></li>
+	 			<li><a href="#">Contact Us</a></li>
+	 			<li><a href="#">FAQ</a></li>
+	 		</ul>
+		 </nav>
+			 <p>Copyright &copy; 2018 Florida Energy Systems Consortium </p>
+   </footer>
 
   <script src="../script.js"></script>
 </body>
