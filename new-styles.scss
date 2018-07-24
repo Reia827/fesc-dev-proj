@@ -78,7 +78,7 @@ img {
 	color: var(--light);
 }
 
-/* Top Container */
+/* Top Container index page */
 
 .top-container {
 	display: grid;
@@ -93,7 +93,8 @@ img {
 .showcase {
 	grid-area: showcase;
 	min-height: 400px;
-	background: url("../images/showcase-4.png");
+	background: url("images/showcase-4.png");
+	/* opacity: 0.5; */
 	background-size: cover;
 	background-position: center;
 	padding: 3rem;
@@ -122,6 +123,8 @@ img {
 	padding-bottom: 0.25rem;
 
 }
+
+
 /* Top Box */
 
 .top-box {
@@ -162,6 +165,11 @@ img {
 	text-align: center;
 	padding: 1rem 1rem;
 	box-shadow: var(--shadow);
+}
+
+.social-box .i:hover {
+	background: var(--hover);
+	color: var(--light);
 }
 
 .email {
