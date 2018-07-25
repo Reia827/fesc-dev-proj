@@ -58,7 +58,7 @@ img {
     background: #b39800;
     color: #fff; }
 
-/* Top Container index page */
+/* Top Container Index Page */
 .top-container {
   display: grid;
   grid-gap: 20px;
@@ -103,7 +103,7 @@ img {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem; }
 
-/* Top Box */
+/* Index Page Top Box */
 .top-box {
   background: #ddd;
   display: grid;
@@ -126,6 +126,110 @@ img {
 
 .top-box-4 {
   grid-area: top-box-4; }
+
+/* Outreach Page */
+.outreach-top-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: "outreach-showcase outreach-showcase outreach-box-1" "outreach-showcase outreach-showcase outreach-box-2" "outreach-showcase outreach-showcase outreach-box-3" "outreach-showcase outreach-showcase outreach-box-4" "outreach-showcase outreach-showcase outreach-box-5" "outreach-showcase outreach-showcase outreach-box-6"; }
+
+.outreach-showcase {
+  grid-area: showcase;
+  min-height: 400px;
+  /* opacity: 0.5; */
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8); }
+
+.outreach-box {
+  background: #ddd;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  padding: 1.5rem; }
+
+.outreach-box-1 {
+  grid-area: outreach-box-1; }
+
+.outreach-box-2 {
+  grid-area: outreach-box-2; }
+
+.outreach-box-3 {
+  grid-area: outreach-box-3; }
+
+.outreach-box-4 {
+  grid-area: outreach-box-4; }
+
+.outreach-box-5 {
+  grid-area: outreach-box-5; }
+
+.outreach-box-6 {
+  grid-area: outreach-box-6; }
+
+/* People Page */
+.people-container {
+  /*display: grid;
+  grid-gap: 20px;
+  grid-template-areas: repeat(4, 1fr);*/
+  display: grid;
+  /*grid-template-columns: 1fr 2fr 1fr; */
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+  /*grid-auto-rows: 100px;*/
+  grid-auto-rows: minmax(100px, auto); }
+
+.people-box {
+  background: #ddd;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  padding: 1.5rem;
+  img: opacity 0.2; }
+
+.people-box-1 {
+  background-image: url(images/boardroom.jpg);
+  background-position: center; }
+
+.people-box-2 {
+  background-image: url(images/reports.jpg); }
+
+.people-box-3 {
+  background-image: url(images/research.jpg); }
+
+.people-box-4 {
+  background-image: url(images/university.jpg); }
+
+.people-box-5 {
+  background-image: url(images/leadership.jpg); }
+
+.people-box-6 {
+  background-image: url(images/oversight.jpg); }
+
+.people-box-7 {
+  background-image: url(images/university-leads.jpg); }
 
 /* Boxes */
 .boxes {
