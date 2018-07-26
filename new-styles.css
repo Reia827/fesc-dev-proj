@@ -3,7 +3,8 @@ html {
           box-sizing: border-box;
   color: #333;
   margin-left: 15px;
-  margin-right: 15px; }
+  margin-right: 15px;
+  font-family: 'Roboto', sans-serif; }
 
 body {
   background: #f2f2f2;
@@ -68,6 +69,8 @@ img {
   grid-area: showcase;
   min-height: 400px;
   background: url("images/showcase-4.png");
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten;
   /* opacity: 0.5; */
   background-size: cover;
   background-position: center;
@@ -97,7 +100,7 @@ img {
   font-size: 1.3rem;
   font-weight: 500;
   margin-top: 0;
-  color: #fff; }
+  color: #333; }
 
 .showcase .btn {
   padding-top: 0.25rem;
@@ -128,10 +131,24 @@ img {
   grid-area: top-box-4; }
 
 /* Outreach Page */
-.outreach-top-container {
+/*.outreach-top-container {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas: 
+		'outreach-showcase outreach-showcase outreach-box-1'
+		'outreach-showcase outreach-showcase outreach-box-2'
+		'outreach-showcase outreach-showcase outreach-box-3'
+		'outreach-showcase outreach-showcase outreach-box-4'
+		'outreach-showcase outreach-showcase outreach-box-5'
+		'outreach-showcase outreach-showcase outreach-box-6'
+} */
+.wrapper-2 {
   display: grid;
-  grid-gap: 20px;
-  grid-template-areas: "outreach-showcase outreach-showcase outreach-box-1" "outreach-showcase outreach-showcase outreach-box-2" "outreach-showcase outreach-showcase outreach-box-3" "outreach-showcase outreach-showcase outreach-box-4" "outreach-showcase outreach-showcase outreach-box-5" "outreach-showcase outreach-showcase outreach-box-6"; }
+  /*grid-template-columns: 1fr 2fr 1fr; */
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  /*grid-auto-rows: 100px;*/
+  grid-auto-rows: minmax(100px, auto); }
 
 .outreach-showcase {
   grid-area: showcase;
@@ -167,24 +184,29 @@ img {
           box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
   padding: 1.5rem; }
 
-.outreach-box-1 {
-  grid-area: outreach-box-1; }
+/*.outreach-box-1 {
+	grid-area: outreach-box-1;
+}
 
 .outreach-box-2 {
-  grid-area: outreach-box-2; }
+	grid-area: outreach-box-2;
+}
 
 .outreach-box-3 {
-  grid-area: outreach-box-3; }
+	grid-area: outreach-box-3;
+}
 
 .outreach-box-4 {
-  grid-area: outreach-box-4; }
+	grid-area: outreach-box-4;
+}
 
 .outreach-box-5 {
-  grid-area: outreach-box-5; }
+	grid-area: outreach-box-5;
+}
 
 .outreach-box-6 {
-  grid-area: outreach-box-6; }
-
+	grid-area: outreach-box-6;
+} */
 /* People Page */
 .people-container {
   /*display: grid;
@@ -207,29 +229,59 @@ img {
   -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
           box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
   padding: 1.5rem;
-  img: opacity 0.2; }
+  img: opacity 0.2;
+  color: #003300;
+  letter-spacing: 1px;
+  font-size: 1.2rem; }
 
 .people-box-1 {
-  background-image: url(images/boardroom.jpg);
-  background-position: center; }
+  background-image: url(images/boardroom-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten; }
 
 .people-box-2 {
-  background-image: url(images/reports.jpg); }
+  background-image: url(images/reports.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten; }
 
 .people-box-3 {
-  background-image: url(images/research.jpg); }
+  background-image: url(images/research.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten; }
 
 .people-box-4 {
-  background-image: url(images/university.jpg); }
+  background-image: url(images/university.jpg);
+  background-color: rgba(255, 255, 255, 0.5);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: lighten; }
 
 .people-box-5 {
-  background-image: url(images/leadership.jpg); }
+  background-image: url(images/leadership.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten; }
 
 .people-box-6 {
-  background-image: url(images/oversight.jpg); }
+  background-image: url(images/oversight.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten; }
 
 .people-box-7 {
-  background-image: url(images/university-leads.jpg); }
+  background-image: url(images/university-leads.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten; }
 
 /* Boxes */
 .boxes {
