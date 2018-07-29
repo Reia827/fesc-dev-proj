@@ -1,10 +1,10 @@
-	$primary: #ddd;
+	$primary: #B4B7BA;//was #ddd now harbor mist
 	$dark: #333;
 	$light: #fff;
 	$green: #003300;
 	$shadow:0 1px 5px rgba(104, 104, 104, 0.8);
-	$btn: #b39800;
-	$hover:#b39800; 
+	$btn: $dark; //was spicy mustard
+	$hover:#d8ae47; //spicy mustard
 
 //@import url('https://fonts.googleapis.com/css?family=Roboto');
 
@@ -25,7 +25,7 @@ html {
 }
 
 body {
-	background: #f2f2f2;
+	background: #FOEDE5;//was#f2f2f2 now cocounut milk
 	margin: 30px 50px;
 	line-height: 1.4;
 }
@@ -45,34 +45,50 @@ img {
 
 /* Header */
 
-/*header {
-	margin-top: 2rem;
-	background-size: cover;
-	background-position: center;
-	padding: 10rem;
-	display: flex;
+header {
+	margin-top: .5rem;
+	background: rgba(210, 105, 30, .85);//#D2691E autumn maple
 	color: $light;
 	text-align: center;
-	background-image: url(../images/header-img.png);
-} */
+	padding: 1rem;
+}
+
+header h1 {
+	color: $dark;
+}
+
+/*header {
+	margin-top: 2rem;
+	background: $dark;
+	color: $light;
+	//background-size: cover;
+	//background-position: center;
+	padding: 1rem;
+	//display: flex;
+	//color: $light;
+	text-align: left;
+	//background-image: url(images/header.png);
+}*/
 
 /*Navigation*/
 
 .main-nav ul {
 	display: grid;
-	grid-gap: 20px;
+	grid-gap: 10px;
 	padding: 0;
+	margin-top: -.5rem;
+	margin-bottom: -.5rem;
 	list-style: none;
 	grid-template-columns: repeat(8, 1fr);
 }
 
 .main-nav a {
-	background: $primary;
+	background: $dark;
 	display: block;
 	text-decoration: none;
 	padding: 0.8rem;
 	text-align: center;
-	color: var(--dark);
+	color: $light;
 	text-transform: uppercase;
 	font-size: 1.1rem;
 	box-shadow: $shadow;
@@ -97,29 +113,30 @@ img {
 
 .showcase {
 	grid-area: showcase;
-	min-height: 400px;
-	background: url("images/showcase-4.png");
+	min-height: 200px;
+	background: url("images/solar-panels.jpg");
 	background-color: rgba(255, 255, 255, 0.5);
-  background-blend-mode: lighten;
-	/* opacity: 0.5; */
-	background-size: cover;
+ 	background-blend-mode: lighten;
+//opacity: 0.5;
+	background-size: contain;
 	background-position: center;
+	background-repeat: no-repeat;
 	padding: 3rem;
 	display: flex;
-	flex-direction: column;
+	flex-direction:  column;
 	align-items: start;
-	justify-content: left;
+	justify-content: center;
 	box-shadow: $shadow;
 }
 
 .showcase h1 {
-	font-size: 4rem;
+	//font-size: 4rem;
 	margin-bottom: 0;
 	color: $dark;
 }
 
 .showcase p {
-	font-size: 1.3rem;
+	//font-size: 1.3rem;
 	font-weight: 500;
 	margin-top: 0;
 	color: $dark;
@@ -134,45 +151,51 @@ img {
 /* Index Page Top Box */
 
 .top-box {
-	background: $primary;
-	display: grid;
 	align-items: center;
 	justify-items: center;
 	box-shadow: $shadow;
 	padding: 1.5rem;
+	color: $dark;
+	letter-spacing: 2px;
+	font-weight: 300;
 }
 
-.top-box-1 {
-	grid-area: top-box-1;
+.box-1 {
+	//grid-area: top-box-1;
+	background-image: url(images/conference.png);
+	background-position: center;
+	background-repeat: repeat;
+	background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten;
 }
 
-.top-box-2 {
-	grid-area: top-box-2;
+.box-2 {
+	//grid-area: top-box-2;
+	background: $dark;
+	color: $light;
 }
 
-.top-box-3 {
-	grid-area: top-box-3;
+.box-3 {
+	//grid-area: top-box-3;
+	background-image: url(images/university-leads.jpg);
+	background-position: center;
+	background-repeat: repeat;
+	background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten;
 }
 
-.top-box-4 {
-	grid-area: top-box-4;
+.box-4 {
+	//grid-area: top-box-4;
+	background-image: url(images/university.jpg);
+	background-position: center;
+	background-repeat: repeat;
+	background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten;
 }
 
 /* Outreach Page */
 
-/*.outreach-top-container {
-	display: grid;
-	grid-gap: 20px;
-	grid-template-areas: 
-		'outreach-showcase outreach-showcase outreach-box-1'
-		'outreach-showcase outreach-showcase outreach-box-2'
-		'outreach-showcase outreach-showcase outreach-box-3'
-		'outreach-showcase outreach-showcase outreach-box-4'
-		'outreach-showcase outreach-showcase outreach-box-5'
-		'outreach-showcase outreach-showcase outreach-box-6'
-} */
-
-	.wrapper-2{
+.wrapper-2{
 		display: grid;
 		/*grid-template-columns: 1fr 2fr 1fr; */
 		grid-template-columns: repeat(3, 1fr); 
@@ -196,38 +219,17 @@ img {
 }
 
 .outreach-box {
-	background: $primary;
+	background: linear-gradient($primary,#506020);
 	display: grid;
 	align-items: center;
 	justify-items: center;
 	box-shadow: $shadow;
 	padding: 1.5rem;
+	color: $dark;
+	letter-spacing: 2px;
+	font-weight: 100;
+
 }
-
-/*.outreach-box-1 {
-	grid-area: outreach-box-1;
-}
-
-.outreach-box-2 {
-	grid-area: outreach-box-2;
-}
-
-.outreach-box-3 {
-	grid-area: outreach-box-3;
-}
-
-.outreach-box-4 {
-	grid-area: outreach-box-4;
-}
-
-.outreach-box-5 {
-	grid-area: outreach-box-5;
-}
-
-.outreach-box-6 {
-	grid-area: outreach-box-6;
-} */
-
 
 /* People Page */
 
@@ -315,17 +317,51 @@ img {
 
 /* Boxes */
 
-.boxes {
+.social-container {
 	display: grid;
-	grid-gap: 20px;
-	grid-template-columns: 1fr 1fr 1fr;
-}
+	grid-gap: 1px;
+	grid-template-columns: auto auto auto auto;
+	box-shadow: $shadow;
+	padding: 5px;
+	margin-top: -.5rem;
+	margin-bottom: -.5rem;
+} 
 
-.social-box {
+/*.social-container > div {
+	background-color: $primary;
+	text-align: center;
+	padding: 20px 0;
+} */
+
+.email {
 	background: $primary;
+	background-image: url(images/envelope.jpg);
 	text-align: center;
 	padding: 1rem 1rem;
 	box-shadow: $shadow;
+	
+}
+
+.social-box-1 {
+	//background: $primary;
+	text-align: center;
+	padding: 3rem 0 0 0;
+	//box-shadow: $shadow;
+
+}
+.social-box-2 {
+	//background: $primary;
+	text-align: center;
+	padding: 3rem 0 0 0;
+	//box-shadow: $shadow;
+
+}
+
+.social-box-3 {
+	//background: $primary;
+	text-align: center;
+	padding: 3rem 0 0 0;
+	//box-shadow: $shadow;	
 }
 
 /*.social-box .i:hover {
@@ -333,20 +369,12 @@ img {
 	color: $light;
 } */
 
-.email {
-	background: $primary;
-	text-align: center;
-	padding: 1rem 1rem;
-	box-shadow: $shadow;
-
-}
-
 /* Footer */
 
 footer {
-	margin-top: 2rem;
-	background: $dark;
-	color: $light;
+	margin-top: 0rem;
+	background: dark;
+	color: $dark;
 	text-align: center;
 	padding: 1rem;
 	
@@ -361,12 +389,12 @@ footer {
 }
 
 .end-nav a {
-	background: $primary;
+	background: $dark;
 	display: block;
 	text-decoration: none;
 	padding: 0.8rem;
 	text-align: center;
-	color: $dark;
+	color: $light;
 	text-transform: uppercase;
 	font-size: 1.1rem;
 	box-shadow: $shadow;
