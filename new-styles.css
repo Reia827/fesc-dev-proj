@@ -27,15 +27,41 @@ img {
 
 /* Header */
 header {
-  margin-top: .5rem;
-  background: rgba(210, 105, 30, 0.85);
-  color: #fff;
-  text-align: center;
-  padding: 1rem; }
+  background-image: url(images/header-image.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  min-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
+.search {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+/* header {
+	margin-top: .5rem;
+	background: rgba(210, 105, 30, .85);//#D2691E autumn maple
+	color: $light;
+	text-align: center;
+	padding: 1rem;
+} 
 
 header h1 {
-  color: #333; }
-
+	color: $dark;
+} */
 /*header {
 	margin-top: 2rem;
 	background: $dark;
@@ -81,9 +107,9 @@ header h1 {
 
 .showcase {
   grid-area: showcase;
-  min-height: 200px;
-  background: url("images/solar-panels.jpg");
-  background-color: rgba(255, 255, 255, 0.5);
+  min-height: 150px;
+  background: url("images/solar-panels-2.png");
+  background-color: rgba(255, 255, 255, 0.8);
   background-blend-mode: lighten;
   background-size: contain;
   background-position: center;
@@ -107,16 +133,37 @@ header h1 {
 
 .showcase h1 {
   margin-bottom: 0;
-  color: #333; }
+  color: #fff; }
 
 .showcase p {
+  font-size: 1.2rem;
   font-weight: 500;
   margin-top: 0;
-  color: #333; }
+  color: #333;
+  line-height: 1.5rem; }
 
-.showcase .btn {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem; }
+/*.showcase .btn {
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+} */
+.btn-container {
+  margin: auto;
+  height: 44px;
+  width: 166.23px; }
+
+button {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  border: none;
+  padding: 8px;
+  font-size: 20px;
+  background: #333;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 /* Index Page Top Box */
 .top-box {
@@ -279,6 +326,44 @@ header h1 {
   background-color: rgba(255, 255, 255, 0.5);
   background-blend-mode: lighten; }
 
+/* Advisory Board */
+.collapsible {
+  background-color: #B4B7BA;
+  color: #003300;
+  cursor: pointer;
+  padding: 18px;
+  width: 50%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  margin-top: -10px;
+  margin-bottom: -10px; }
+
+.advisory h2 {
+  color: #003300;
+  letter-spacing: 2px;
+  font-size: 25px;
+  line-height: 15px;
+  text-align: center; }
+
+.active, .collapsible:hover {
+  background-color: #d8ae47; }
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+  background-color: #fff;
+  color: #333;
+  width: 50%; }
+
+/*.content img {
+	width: 100px;
+	height: 100px;
+} */
 /* Boxes */
 .social-container {
   display: grid;

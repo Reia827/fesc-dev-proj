@@ -1,12 +1,10 @@
 	$primary: #B4B7BA;//was #ddd now harbor mist
-	$dark: #333;
-	$light: #fff;
-	$green: #003300;
+	$dark: #333; //black
+	$light: #fff; //white
+	$green: #003300; //some caption text
 	$shadow:0 1px 5px rgba(104, 104, 104, 0.8);
 	$btn: $dark; //was spicy mustard
 	$hover:#d8ae47; //spicy mustard
-
-//@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 @mixin btn {
 	background-color: $btn;
@@ -46,16 +44,32 @@ img {
 /* Header */
 
 header {
+	background-image: url(images/header-image.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	min-height: 200px;
+	display: flex;
+	flex-direction:  column;
+	align-items: start;
+	justify-content: flex-start;
+	
+}
+.search {
+	justify-content: flex-end;
+}
+
+/* header {
 	margin-top: .5rem;
 	background: rgba(210, 105, 30, .85);//#D2691E autumn maple
 	color: $light;
 	text-align: center;
 	padding: 1rem;
-}
+} 
 
 header h1 {
 	color: $dark;
-}
+} */
 
 /*header {
 	margin-top: 2rem;
@@ -113,11 +127,10 @@ header h1 {
 
 .showcase {
 	grid-area: showcase;
-	min-height: 200px;
-	background: url("images/solar-panels.jpg");
-	background-color: rgba(255, 255, 255, 0.5);
+	min-height: 150px;
+	background: url("images/solar-panels-2.png");
+	background-color: rgba(255, 255, 255, .8);
  	background-blend-mode: lighten;
-//opacity: 0.5;
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -132,21 +145,38 @@ header h1 {
 .showcase h1 {
 	//font-size: 4rem;
 	margin-bottom: 0;
-	color: $dark;
+	color: $light;
 }
 
 .showcase p {
-	//font-size: 1.3rem;
+	font-size: 1.2rem;
 	font-weight: 500;
 	margin-top: 0;
 	color: $dark;
+	line-height: 1.5rem;
 }
 
-.showcase .btn {
+/*.showcase .btn {
 	padding-top: 0.25rem;
 	padding-bottom: 0.25rem;
+} */
+
+.btn-container {
+	margin: auto;
+	height: 44px;
+	width: 166.23px;
 }
 
+button {
+	user-select: none;
+	cursor: pointer;
+	border: none;
+	padding: 8px;
+	font-size: 20px;
+	background: $dark;
+	color: $light;
+	box-sizing: border-box;
+}
 
 /* Index Page Top Box */
 
@@ -313,6 +343,49 @@ header h1 {
 	background-color: rgba(255, 255, 255, 0.5);
   background-blend-mode: lighten;
 } 
+
+/* Advisory Board */
+
+.collapsible {
+    background-color: $primary;
+    color: $green;
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+		margin-top: -10px;
+		margin-bottom: -10px;
+}
+
+.advisory h2 {
+	color: $green;
+	letter-spacing: 2px;
+	font-size: 25px;
+	line-height: 15px;
+	text-align: center;
+}
+
+.active, .collapsible:hover {
+    background-color: $hover;
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: $light;
+		color: $dark;
+		width: 50%;
+}
+
+/*.content img {
+	width: 100px;
+	height: 100px;
+} */
 
 
 /* Boxes */
