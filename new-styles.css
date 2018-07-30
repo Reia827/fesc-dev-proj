@@ -26,11 +26,11 @@ img {
   grid-gap: 20px; }
 
 /* Header */
-header {
+.header-container {
   background-image: url(images/header-image.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position: left;
   min-height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -46,10 +46,10 @@ header {
       -ms-flex-pack: start;
           justify-content: flex-start; }
 
-.search {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end; }
+.search-container .search {
+  position: absolute;
+  bottom: 550px;
+  left: 1000px; }
 
 /* header {
 	margin-top: .5rem;
@@ -400,24 +400,31 @@ button {
   text-align: center;
   padding: 1rem 1rem;
   -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8); }
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.7);
+  background-blend-mode: lighten; }
+
+.email .btn:hover {
+  background: #d8ae47;
+  color: #fff; }
 
 .social-box-1 {
   text-align: center;
-  padding: 3rem 0 0 0; }
+  padding: 3rem 0 0 0;
+  color: #1da1f2; }
 
 .social-box-2 {
   text-align: center;
-  padding: 3rem 0 0 0; }
+  padding: 3rem 0 0 0;
+  color: #3b5998; }
 
 .social-box-3 {
   text-align: center;
-  padding: 3rem 0 0 0; }
+  padding: 3rem 0 0 0;
+  color: #007bb5; }
 
-/*.social-box .i:hover {
-	background: $hover;
-	color: $light;
-} */
 /* Footer */
 footer {
   margin-top: 0rem;
