@@ -44,36 +44,14 @@ img {
           align-items: start;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: flex-start; }
+          justify-content: flex-start;
+  margin-bottom: -15px; }
 
 .search-container .search {
   position: absolute;
   bottom: 550px;
   left: 1000px; }
 
-/* header {
-	margin-top: .5rem;
-	background: rgba(210, 105, 30, .85);//#D2691E autumn maple
-	color: $light;
-	text-align: center;
-	padding: 1rem;
-} 
-
-header h1 {
-	color: $dark;
-} */
-/*header {
-	margin-top: 2rem;
-	background: $dark;
-	color: $light;
-	//background-size: cover;
-	//background-position: center;
-	padding: 1rem;
-	//display: flex;
-	//color: $light;
-	text-align: left;
-	//background-image: url(images/header.png);
-}*/
 /*Navigation*/
 .main-nav ul {
   display: grid;
@@ -215,7 +193,12 @@ button {
 .outreach-showcase {
   grid-area: showcase;
   min-height: 400px;
-  /* opacity: 0.5; */
+  background-image: url(images/showcase-4.png);
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: lighten;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding: 3rem;
@@ -229,15 +212,17 @@ button {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
           box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8); }
 
+.outreach-showcase p {
+  font-size: 1.1rem; }
+
 .outreach-box {
-  background: -webkit-gradient(linear, left top, left bottom, from(#B4B7BA), to(#506020));
-  background: linear-gradient(#B4B7BA, #506020);
+  background: #B4B7BA;
   display: grid;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -249,6 +234,54 @@ button {
   color: #333;
   letter-spacing: 2px;
   font-weight: 100; }
+
+.outreach-box h3 {
+  font-size: 1.3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.outreach-box-1 {
+  background-image: url(images/fact-sheet.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten; }
+
+.outreach-box-2 {
+  background-image: url(images/energy-video-clip.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten; }
+
+.outreach-box-3 {
+  background-image: url(images/research-and-expertise.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten; }
+
+.outreach-box-4 {
+  background-image: url(images/energy-links.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten; }
+
+.outreach-box-5 {
+  background-image: url(images/calculator.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten; }
+
+.outreach-box-6 {
+  background-image: url(images/tax-incentives.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten; }
 
 /* People Page */
 .people-container {
@@ -386,7 +419,7 @@ button {
   -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
           box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
   padding: 5px;
-  margin-top: -.5rem;
+  margin-top: 1rem;
   margin-bottom: -.5rem; }
 
 /*.social-container > div {
@@ -403,7 +436,7 @@ button {
           box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
   background-position: center;
   background-repeat: no-repeat;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.75);
   background-blend-mode: lighten; }
 
 .email .btn:hover {
