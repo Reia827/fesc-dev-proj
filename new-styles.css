@@ -78,20 +78,34 @@ img {
     color: #fff; }
 
 /* Top Container Index Page */
-.top-container {
+.wrapper-3 {
   display: grid;
-  grid-gap: 20px;
-  grid-template-areas: 'showcase showcase top-box-1' 'showcase showcase top-box-2' 'showcase showcase top-box-3' 'showcase showcase top-box-4'; }
+  /*grid-template-columns: 1fr 2fr 1fr; */
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  grid-gap: 1em;
+  /*grid-auto-rows: 100px;*/
+  grid-auto-rows: minmax(100px, auto); }
 
+/*.top-container {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas: 
+		'showcase top-box-1'
+		'showcase top-box-2'
+		'showcase top-box-3'
+		'showcase top-box-4';
+} */
 .showcase {
   grid-area: showcase;
-  min-height: 150px;
-  background: url("images/solar-panels-2.png");
+  min-height: 400px;
+  background-image: url(images/solar-panels-2.png);
   background-color: rgba(255, 255, 255, 0.8);
   background-blend-mode: lighten;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   padding: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -109,17 +123,36 @@ img {
   -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
           box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8); }
 
+/*.showcase {
+	grid-area: showcase;
+	min-height: 150px;
+	background: url("images/solar-panels-2.png");
+	background-color: rgba(255, 255, 255, .8);
+ 	background-blend-mode: lighten;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 3rem;
+	display: flex;
+	flex-direction:  column;
+	align-items: start;
+	justify-content: center;
+	box-shadow: $shadow;
+} */
 .showcase h1 {
   margin-bottom: 0;
   color: #fff; }
 
 .showcase p {
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin-top: 0;
-  color: #333;
-  line-height: 1.5rem; }
+  font-size: 1.1rem; }
 
+/*.showcase p {
+	font-size: 1.2rem;
+	font-weight: 500;
+	margin-top: 0;
+	color: $dark;
+	line-height: 1.5rem;
+} */
 /*.showcase .btn {
 	padding-top: 0.25rem;
 	padding-bottom: 0.25rem;
@@ -144,7 +177,18 @@ button {
           box-sizing: border-box; }
 
 /* Index Page Top Box */
+/*.top-box {
+	align-items: center;
+	justify-items: center;
+	box-shadow: $shadow;
+	padding: 1.5rem;
+	color: $dark;
+	letter-spacing: 2px;
+	font-weight: 300;
+} */
 .top-box {
+  background: #B4B7BA;
+  display: grid;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -154,8 +198,12 @@ button {
   padding: 1.5rem;
   color: #333;
   letter-spacing: 2px;
-  font-weight: 300; }
+  font-weight: 100; }
 
+/*.outreach-box h3 {
+	font-size: 1.3rem;
+	align-items: center;
+} */
 .box-1 {
   background-image: url(images/conference.png);
   background-position: center;
@@ -163,24 +211,53 @@ button {
   background-color: rgba(255, 255, 255, 0.5);
   background-blend-mode: lighten; }
 
+/*.box-1 {
+	//grid-area: top-box-1;
+	background-image: url(images/conference.png);
+	background-position: center;
+	background-repeat: repeat;
+	background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten;
+} */
 .box-2 {
+  background-image: url(images/university-leads.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten; }
+
+/*.box-2 {
+	//grid-area: top-box-2;
+	background: $dark;
+	color: $light;
+} */
+.box-3 {
+  background-image: url(images/university.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten; }
+
+/*.box-3 {
+	//grid-area: top-box-3;
+	background-image: url(images/university-leads.jpg);
+	background-position: center;
+	background-repeat: repeat;
+	background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten;
+} */
+.box-4 {
   background: #333;
   color: #fff; }
 
-.box-3 {
-  background-image: url(images/university-leads.jpg);
-  background-position: center;
-  background-repeat: repeat;
-  background-color: rgba(255, 255, 255, 0.5);
-  background-blend-mode: lighten; }
-
-.box-4 {
-  background-image: url(images/university.jpg);
-  background-position: center;
-  background-repeat: repeat;
-  background-color: rgba(255, 255, 255, 0.5);
-  background-blend-mode: lighten; }
-
+/*.box-4 {
+	//grid-area: top-box-4;
+	background-image: url(images/university.jpg);
+	background-position: center;
+	background-repeat: repeat;
+	background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten;
+} */
 /* Outreach Page */
 .wrapper-2 {
   display: grid;
