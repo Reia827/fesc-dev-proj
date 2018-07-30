@@ -332,13 +332,26 @@ button {
   color: #003300;
   cursor: pointer;
   padding: 18px;
-  width: 50%;
+  width: 100%;
   border: none;
   text-align: left;
   outline: none;
   font-size: 18px;
   margin-top: -10px;
   margin-bottom: -10px; }
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 48%;
+  padding: 8px;
+  margin: 5px; }
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
 
 .advisory h2 {
   color: #003300;
@@ -351,14 +364,15 @@ button {
   background-color: #d8ae47; }
 
 .content {
-  padding: 0 18px;
+  padding-top: 12px;
+  padding-bottom: 0;
   max-height: 0;
   overflow: hidden;
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
   background-color: #fff;
   color: #333;
-  width: 50%; }
+  width: 100%; }
 
 /*.content img {
 	width: 100px;
