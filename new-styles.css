@@ -52,29 +52,41 @@ img {
   top: 50px;
   left: 950px;
   color: #007bb5; }
+  .social-linked-in i:hover {
+    background-color: rgba(0, 0, 0, 0.1); }
 
 .social-twitter {
   position: absolute;
   top: 50px;
   left: 1090px;
   color: #1da1f2; }
+  .social-twitter i:hover {
+    background-color: rgba(0, 0, 0, 0.1); }
 
 .social-facebook {
   position: absolute;
   top: 50px;
   left: 1230px;
   color: #3b5998; }
+  .social-facebook i:hover {
+    background-color: rgba(0, 0, 0, 0.1); }
 
 .social-youtube {
   position: absolute;
   top: 50px;
   left: 1370px;
   color: #ff0000; }
+  .social-youtube i:hover {
+    background-color: rgba(0, 0, 0, 0.1); }
 
 .search-container .search {
   position: absolute;
   bottom: 550px;
   left: 1058px; }
+
+.search-container button:hover {
+  background: #ff9900;
+  color: #fff; }
 
 /*Navigation*/
 .main-nav ul {
@@ -101,16 +113,6 @@ img {
     background: #ff9900;
     color: #fff; }
 
-/* Top Container Index Page */
-/*.top-container {
-	display: grid;
-	grid-gap: 20px;
-	grid-template-areas: 
-		'showcase top-box-1'
-		'showcase top-box-2'
-		'showcase top-box-3'
-		'showcase top-box-4';
-} */
 .showcase {
   grid-area: showcase;
   min-height: 400px;
@@ -139,22 +141,6 @@ img {
   -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
           box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8); }
 
-/*.showcase {
-	grid-area: showcase;
-	min-height: 150px;
-	background: url("images/solar-panels-2.png");
-	background-color: rgba(255, 255, 255, .8);
- 	background-blend-mode: lighten;
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
-	padding: 3rem;
-	display: flex;
-	flex-direction:  column;
-	align-items: start;
-	justify-content: center;
-	box-shadow: $shadow;
-} */
 .showcase h1 {
   margin-bottom: 0;
   color: #fff; }
@@ -162,17 +148,6 @@ img {
 .showcase p {
   font-size: 1.1rem; }
 
-/*.showcase p {
-	font-size: 1.2rem;
-	font-weight: 500;
-	margin-top: 0;
-	color: $dark;
-	line-height: 1.5rem;
-} */
-/*.showcase .btn {
-	padding-top: 0.25rem;
-	padding-bottom: 0.25rem;
-} */
 .btn-container {
   margin: auto;
   height: 44px;
@@ -228,84 +203,6 @@ button {
   -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
           box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8); }
 
-/*.top-box {
-	align-items: center;
-	justify-items: center;
-	box-shadow: $shadow;
-	padding: 1.5rem;
-	color: $dark;
-	letter-spacing: 2px;
-	font-weight: 300;
-} */
-/*.top-box {
-	background: $primary;
-	display: grid;
-	align-items: center;
-	justify-items: center;
-	box-shadow: $shadow;
-	padding: 1.5rem;
-	color: $dark;
-	letter-spacing: 2px;
-	font-weight: 100;
-} */
-/*.outreach-box h3 {
-	font-size: 1.3rem;
-	align-items: center;
-} */
-/*.box-1 {
-	background-image: url(images/conference.png);
-	background-position: center;
-	background-repeat: repeat;
-	background-color: rgba(255, 255, 255, 0.5);
-  background-blend-mode: lighten;
-} */
-/*.box-1 {
-	//grid-area: top-box-1;
-	background-image: url(images/conference.png);
-	background-position: center;
-	background-repeat: repeat;
-	background-color: rgba(255, 255, 255, 0.5);
-  background-blend-mode: lighten;
-} */
-/*.box-2 {
-	background-image: url(images/university-leads.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-color: rgba(255, 255, 255, 0.5);
-  background-blend-mode: lighten;
-} */
-/*.box-2 {
-	//grid-area: top-box-2;
-	background: $dark;
-	color: $light;
-} */
-/*.box-3 {
-	background-image: url(images/university.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-color: rgba(255, 255, 255, 0.5);
-  background-blend-mode: lighten;
-} */
-/*.box-3 {
-	//grid-area: top-box-3;
-	background-image: url(images/university-leads.jpg);
-	background-position: center;
-	background-repeat: repeat;
-	background-color: rgba(255, 255, 255, 0.5);
-  background-blend-mode: lighten;
-} */
-/*.box-4 {
-	background: $dark;
-	color: $light;
-} */
-/*.box-4 {
-	//grid-area: top-box-4;
-	background-image: url(images/university.jpg);
-	background-position: center;
-	background-repeat: repeat;
-	background-color: rgba(255, 255, 255, 0.5);
-  background-blend-mode: lighten;
-} */
 /* Outreach Page */
 .wrapper-2 {
   display: grid;
@@ -357,8 +254,8 @@ button {
           box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
   padding: 1.5rem;
   color: #333;
-  letter-spacing: 2px;
-  font-weight: 100; }
+  letter-spacing: 1px;
+  line-height: 1.3rem; }
 
 .outreach-box h3 {
   font-size: 1.3rem;
@@ -370,42 +267,42 @@ button {
   background-image: url(images/fact-sheet.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
   background-blend-mode: lighten; }
 
 .outreach-box-2 {
   background-image: url(images/energy-video-clip.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
   background-blend-mode: lighten; }
 
 .outreach-box-3 {
   background-image: url(images/research-and-expertise.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
   background-blend-mode: lighten; }
 
 .outreach-box-4 {
   background-image: url(images/energy-links.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
   background-blend-mode: lighten; }
 
 .outreach-box-5 {
   background-image: url(images/calculator.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
   background-blend-mode: lighten; }
 
 .outreach-box-6 {
   background-image: url(images/tax-incentives.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
   background-blend-mode: lighten; }
 
 /* People Page */
@@ -433,7 +330,8 @@ button {
   img: opacity 0.2;
   color: #003300;
   letter-spacing: 1px;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  line-height: 1.3rem; }
 
 a:hover {
   background: #ff9900;
@@ -536,56 +434,27 @@ a:hover {
   color: #333;
   width: 100%; }
 
-/*.content img {
-	width: 100px;
-	height: 100px;
-} */
-/* Social Box */
-.social-container {
-  display: grid;
-  grid-gap: 1px;
-  grid-template-columns: 100%;
-  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-  padding: 5px;
-  margin-top: -.5rem;
-  margin-bottom: -.5rem; }
+/* Newsletter */
+.email-container {
+  background-color: #fff;
+  padding: 10px; }
 
-/*.social-container > div {
-	background-color: $primary;
-	text-align: center;
-	padding: 20px 0;
-} */
-.email {
-  background: #B4B7BA;
-  background-image: url(images/envelope.jpg);
-  text-align: center;
-  padding: 1rem 1rem;
-  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: rgba(255, 255, 255, 0.75);
-  background-blend-mode: lighten; }
+.subscribe {
+  left: 50px; }
+  .subscribe h3 {
+    color: #333;
+    font-size: 1.5rem; }
 
-.email .btn:hover {
-  background: #ff9900;
-  color: #fff; }
+.email-container .form {
+  position: absolute;
+  bottom: 550px;
+  left: 1058px; }
 
-.social-box-1 {
-  text-align: center;
-  padding: 3rem 0 0 0;
-  color: #1da1f2; }
-
-.social-box-2 {
-  text-align: center;
-  padding: 3rem 0 0 0;
-  color: #3b5998; }
-
-.social-box-3 {
-  text-align: center;
-  padding: 3rem 0 0 0;
-  color: #007bb5; }
+.email .subscribe-button {
+  padding-bottom: 10px; }
+  .email .subscribe-button:hover {
+    background: #ff9900;
+    color: #fff; }
 
 /* Footer */
 footer {
@@ -618,37 +487,5 @@ footer {
     color: #fff; }
 
 /* Media Queries */
-/*@media(max-width: 700px) {
-	.top-container {
-		grid-template-areas:
-			'showcase showcase'
-			'top-box-1 top-box-2'
-			'top-box3 top-box-4';
-	}
-	.showcase h1 {
-		font-size: 2.5rem;
-	}
-	
-	main-nav ul {
-		grid-template-columns: 1fr;
-	}
-	
-	.info .btn {
-		display: block;
-		text-align: center;
-		margin: auto;
-	}
-}
-
-@media(max-width: 500px) {
-		.top-container {
-			grid-template-areas:
-			'showcase' 
-			'top-box-1'
-			'top-box-2'
-			'top-box-3'
-			'top-box-4';
-	}
-} */
 
 /*# sourceMappingURL=new-styles.css.map */
