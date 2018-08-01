@@ -4,7 +4,7 @@
 	$green: #003300; //some caption text
 	$shadow:0 1px 5px rgba(104, 104, 104, 0.8);
 	$btn: $dark; //was spicy mustard
-	$hover: #ffa500; //#d8ae47 spicy mustard
+	$hover: #ff9900; //#ffa500 orange #d8ae47 spicy mustard
 
 @mixin btn {
 	background-color: $btn;
@@ -56,10 +56,38 @@ img {
 	margin-bottom: -15px;
 }
 	
+.social-linked-in {
+	position: absolute;
+	top: 50px;
+	left: 950px;
+	color: #007bb5;
+}
+
+.social-twitter {
+	position: absolute;
+	top: 50px;
+	left: 1090px;
+	color: #1da1f2;
+}
+
+.social-facebook {
+	position: absolute;
+	top: 50px;
+	left: 1230px;
+	color: #3b5998;
+}
+
+.social-youtube {
+	position: absolute;
+	top: 50px;
+	left: 1370px;
+	color: #ff0000;
+}
+
 .search-container .search {
 	position: absolute;
 	bottom: 550px;
-	left: 1000px;
+	left: 1058px;
 }
 
 
@@ -557,15 +585,15 @@ a:hover {
 } */
 
 
-/* Boxes */
+/* Social Box */
 
 .social-container {
 	display: grid;
 	grid-gap: 1px;
-	grid-template-columns: auto auto auto auto;
+	grid-template-columns: 100%;
 	box-shadow: $shadow;
 	padding: 5px;
-	margin-top: 1rem;
+	margin-top: -.5rem;
 	margin-bottom: -.5rem;
 } 
 
