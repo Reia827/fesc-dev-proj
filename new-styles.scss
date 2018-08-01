@@ -4,7 +4,7 @@
 	$green: #003300; //some caption text
 	$shadow:0 1px 5px rgba(104, 104, 104, 0.8);
 	$btn: $dark; //was spicy mustard
-	$hover:#d8ae47; //spicy mustard
+	$hover: #ffa500; //#d8ae47 spicy mustard
 
 @mixin btn {
 	background-color: $btn;
@@ -65,6 +65,7 @@ img {
 
 /*Navigation*/
 
+
 .main-nav ul {
 	display: grid;
 	grid-gap: 10px;
@@ -94,14 +95,7 @@ img {
 
 /* Top Container Index Page */
 
-.wrapper-3 {
-		display: grid;
-		/*grid-template-columns: 1fr 2fr 1fr; */
-		grid-template-columns: 1fr 1fr 1fr 2fr;
-		grid-gap: 1em;
-		/*grid-auto-rows: 100px;*/
-		grid-auto-rows:minmax(100px, auto);
-	}
+
 
 /*.top-container {
 	display: grid;
@@ -188,7 +182,41 @@ button {
 	box-sizing: border-box;
 }
 
-/* Index Page Top Box */
+/* Index Page Index Box */
+
+.index-box-container {
+  display: grid;
+  grid-gap: 15px;
+  background-color: $light;
+  padding: 15px;
+}
+.grid-item {
+  text-align: center;
+  padding-top: 0px;
+	padding-bottom: 0px;
+	
+}
+.index-box-1 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+	box-shadow: $shadow;
+}
+.index-box-2 {
+  grid-column: 3;
+  grid-row: 1 / span 3;
+	box-shadow: $shadow;
+}
+.index-box-3 {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+	box-shadow: $shadow;
+  }
+.index-box-4 {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+	box-shadow: $shadow;
+}
+
 
 /*.top-box {
 	align-items: center;
@@ -200,7 +228,7 @@ button {
 	font-weight: 300;
 } */
 
-.top-box {
+/*.top-box {
 	background: $primary;
 	display: grid;
 	align-items: center;
@@ -210,20 +238,20 @@ button {
 	color: $dark;
 	letter-spacing: 2px;
 	font-weight: 100;
-}
+} */
 
 /*.outreach-box h3 {
 	font-size: 1.3rem;
 	align-items: center;
 } */
 
-.box-1 {
+/*.box-1 {
 	background-image: url(images/conference.png);
 	background-position: center;
 	background-repeat: repeat;
 	background-color: rgba(255, 255, 255, 0.5);
   background-blend-mode: lighten;
-} 
+} */
 
 /*.box-1 {
 	//grid-area: top-box-1;
@@ -234,13 +262,13 @@ button {
   background-blend-mode: lighten;
 } */
 
-.box-2 {
+/*.box-2 {
 	background-image: url(images/university-leads.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-color: rgba(255, 255, 255, 0.5);
   background-blend-mode: lighten;
-}
+} */
 
 /*.box-2 {
 	//grid-area: top-box-2;
@@ -248,13 +276,13 @@ button {
 	color: $light;
 } */
 
-.box-3 {
+/*.box-3 {
 	background-image: url(images/university.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-color: rgba(255, 255, 255, 0.5);
   background-blend-mode: lighten;
-}
+} */
 
 /*.box-3 {
 	//grid-area: top-box-3;
@@ -265,10 +293,10 @@ button {
   background-blend-mode: lighten;
 } */
 
-.box-4 {
+/*.box-4 {
 	background: $dark;
 	color: $light;
-}
+} */
 
 /*.box-4 {
 	//grid-area: top-box-4;
@@ -287,9 +315,8 @@ button {
 		grid-template-columns: repeat(3, 1fr); 
 		grid-gap: 1em;
 		/*grid-auto-rows: 100px;*/
-		grid-auto-rows:minmax(100px, auto);
-	}
-
+		grid-auto-rows:minmax(100px, auto); 
+	} 
 
 .outreach-showcase {
 	grid-area: showcase;
@@ -324,14 +351,14 @@ button {
 	color: $dark;
 	letter-spacing: 2px;
 	font-weight: 100;
-}
+} 
 
 .outreach-box h3 {
 	font-size: 1.3rem;
 	align-items: center;
-}
+} 
 
-.outreach-box-1 {
+ .outreach-box-1 {
 	background-image: url(images/fact-sheet.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
@@ -377,7 +404,7 @@ button {
 	background-repeat: no-repeat;
 	background-color: rgba(255, 255, 255, 0.5);
   background-blend-mode: lighten;
-}
+} 
 
 /* People Page */
 
@@ -405,6 +432,13 @@ button {
 	letter-spacing: 1px;
 	font-size: 1.2rem;
 }
+
+//.people-box .people-box-4 
+
+a:hover {
+	background: $hover;
+	color: $light;
+	}
 
 .people-box-1 {
 	background-image: url(images/boardroom-2.jpg);
@@ -478,7 +512,7 @@ button {
 		margin-bottom: -10px;
 }
 
-/* Create two equal columns that floats next to each other */
+/* Create two equal columns that float next to each other */
 .column {
     float: left;
     width: 48%;
@@ -628,6 +662,7 @@ footer {
 }
 
 /* Media Queries */
+
 
 /*@media(max-width: 700px) {
 	.top-container {
