@@ -13,7 +13,7 @@
 
 ### API DOCUMENTATION
 
-#### Data for Google Charts on data.html is sourced from the U.S. EIA open data available at the following:
+#### Data for Google Charts on data.html is sourced from U.S. EIA open data available at the following:
 
 ###### Renewable Energy Production, Florida: https://www.eia.gov/opendata/qb.php?sdid=SEDS.REPRB.FL.A
 ###### Electricity Total Consumption in Florida: https://www.eia.gov/opendata/qb.php?sdid=SEDS.ESTCB.FL.A
