@@ -15,21 +15,24 @@
 	<!-- facebook tags -->
 	 <meta property="og:title" content="Energy Usage">
     <meta property="og:description" content='"The goal of the consortium is to become a world leader in energy research, education, technology, and energy systems analysis."'>
-    <meta property="og:image" content="#">
+    <meta property="og:image" content="https://www.acnpacific.com/ibo/wp-content/uploads/sites/4/2017/12/energy.jpg">
     <meta property="og:image:width" content="1920">
     <meta property="og:image:height" content="1080">
-    <meta property="og:url" content="#">
+    <meta property="og:url" content="https://aknguyen93.github.io/FESC-Redesign">
     <meta property="og:type" content="website">
 
       <!-- twitter tags -->
     <meta name="twitter:title" content="Energy Usage">
-    <meta name="twitter:description" content="The goal of the consortium is to become a world leader in energy research, education, technology, and energy systems analysis."'>
-    <meta name="twitter:image" content="#">
+    <meta name="twitter:description" content='"The goal of the consortium is to become a world leader in energy research, education, technology, and energy systems analysis."'>
+    <meta name="twitter:image" content="https://www.acnpacific.com/ibo/wp-content/uploads/sites/4/2017/12/energy.jpg">
     <meta name="twitter:card" content="summary_large_image">
 
     <!--Bootstrap -->
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<!-- google charts -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
 
 	<title>Florida Energy Systems Consortium</title>
@@ -92,45 +95,53 @@
    			</ul>
     </nav>
 
-    <!--top container-->
-    <section class="top-container">
-    	<header class="showcase">
+<!-- charts -->
 
- <h2>Bringing Energy Solutions to Florida, the Nation, and the World</h2>
+<section>
+  <h3>Electricity Total Consumption Florida</h3>
+  <div id="chart_line"></div>
+</section>
+<section>
+  <h3>Renewable Energy Production Florida</h3>
+  <div id="chart_col"></div>
+</section>
+</div>
+<!-- Aside used on pages when needed for related links or resources -->
+<div class="col span_1_of_3">
+<aside>
+  <h4>SOURCES</h4>
+  <p><strong>U.S. Energy Information Administration</strong><br><br>
+  Electricity Total Consumption Florida<br>
+  https://www.eia.gov/opendata/qb.php?sdid=SEDS.ESTCB.FL.A<br><br>
+  Renewable Energy Production Florida<br>
+  https://www.eia.gov/opendata/qb.php?sdid=SEDS.REPRB.FL.A</p>
+</aside>
+</div>
 
-	<p>The Florida Energy Systems Consortium (FESC) was created by the Florida state government to promote collaboration among energy experts at its 12 supported universities. The consortium assists the state in development and implementation of an environmentally compatible, sustainable, and efficient energy strategic plan. <br/>
+<!--Load the Google Charts API-->
+<!--<body>
+<h1>Annual Energy Consumption</h1>
 
-	Overarching to the Consortium’s research strategy is an energy systems approach to identify innovation opportunities, prepare an energy workforce, and guide economic development.<br/>
+<div id="consumption-container" style="width: 550px; height: 400px; margin: 0 auto">
+</div>
 
-	Through collaborative research and development across the state university system and the industry, the goal of the consortium is to become a world leader in energy research, education, technology, and energy systems analysis. In so doing, the consortium shall<span id="dots">...</span><span id="more">
+Electricity total consumption in Florida
+https://www.eia.gov/opendata/qb.php?sdid=SEDS.ESTCB.FL.A
+14:14:30 GMT-0700 (PDT)
+Source: U.S. Energy Information Administration -->
 
-	(a) Coordinate and initiate increased collaborative interdisciplinary energy research among the universities and the energy industry.<br/>
-	(b) Assist in the creation and development of a Florida-based energy technology industry through efforts that would expedite commercialization of innovative energy technologies by taking advantage of the energy expertise within the State University System, high-technology incubators, industrial parks, and industry-driven research centers.<br/>
-	(c) Provide a state resource for objective energy systems analysis.<br/>
-	(d) Develop education and outreach programs to prepare a qualified energy workforce and informed public.</span></p>
-		<button onclick="myFunction()" id="myBtn">Read more</button>
 
-   </header>
-   	</section>
-    	<section class="wrapper-1a">
-    		<div class="grid-item index-box-1"><h2>Annual Conference Registration</h2>
-    			<a href="http://floridaenergysummit.com" target="_blank" class="btn">Register Now&nbsp;<i class="fas fa-external-link-alt"></i></a>
-    			<h2>Centers and Consortia</h2><!--add image-->
-					<a href="people.html" class="btn">Meet Us</a>
-					<h2>Industry and University Consortia</h2><a href="people.html" class="btn">Visit Us</a>
-    		</div>
+<!--<button id="semester-trigger">Show "semesters"</button>
+<button id="bowling-trigger">Show "bowling"</button>
+<button id="allocation-trigger">Show "donation allocations"</button>
 
-    		<div class="grid-item index-box-2"><h2>Latest News...</h2>
-					<iframe width="420" height="315" src="https://www.youtube.com/embed/YA2ofbdd-G8" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-			</div>
+<div id="semesters"></div>
+<div id="chart_div"></div>
+<div id="allocation"></div>
 
-			<!--	<div class="grid-item index-box-3"><h2>Centers and Consortia</h2>
-					<a href="people.html" class="btn">Meet Us</a>
-				</div>-->
-
-			<!--<div class="grid-item index-box-4"><h2>Industry and University Consortia</h2><a href="people.html" class="btn">Visit Us</a>
-				</div> -->
-		 </section>
+<div id="timeline"></div> -->
+</body>
+</html>
 
 				<!-- newsletter -->
 
@@ -156,10 +167,10 @@
 		 </nav>
 			 <p>Copyright &copy; 2018 Florida Energy Systems Consortium </p>
    </footer>
-
-<script src="../script.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
  </div>
+
+   <!-- charts -->
+<script src="data.js"></script>
  	<!--wrapper ends-->
 </body>
 </html>

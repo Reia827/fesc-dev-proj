@@ -205,7 +205,9 @@ img {
 		grid-gap: 1em;
 		/*grid-auto-rows: 100px;*/
 		grid-auto-rows:minmax(100px, auto); 
+	background-color: $primary;
 	} 
+
 .wrapper-1a h2 {
 	color: $dark;
 	font-weight: 100;
@@ -213,11 +215,11 @@ img {
 }
 
 .grid-item {
-	background: $light;
+	background: $primary;
 	display: grid;
 	align-items: center;
 	justify-items: center;
-	box-shadow: $shadow;
+	//box-shadow: $shadow;
 	padding-top: 0;
 	padding-bottom: 1rem;
 	color: $dark;

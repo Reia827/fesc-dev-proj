@@ -178,7 +178,8 @@ img {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1em;
   /*grid-auto-rows: 100px;*/
-  grid-auto-rows: minmax(100px, auto); }
+  grid-auto-rows: minmax(100px, auto);
+  background-color: #B4B7BA; }
 
 .wrapper-1a h2 {
   color: #333;
@@ -186,14 +187,12 @@ img {
   line-height: 1.5rem; }
 
 .grid-item {
-  background: #fff;
+  background: #B4B7BA;
   display: grid;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
-  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
   padding-top: 0;
   padding-bottom: 1rem;
   color: #333;
