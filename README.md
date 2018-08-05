@@ -7,7 +7,7 @@
 #### The line chart demonstrates annual total electricity consumption in Florida between 1960 and 2016. 
 #### The bar chart demonstrates annual renewable energy production in Florida between 1960 and 2016.
 
-#### I researched examples online for code and to learn how to implement Google charts and APIs into the site. I watched class eight video for a tutorial on APIs and incorporated all of this, including existing code available, into the data page.
+#### I researched examples online for code and to learn how to implement Google charts and APIs into the site. I watched class eight video for a tutorial on APIs and incorporated all of this, including existing code available in GitHub, into the data page.
 #### I read documentation for EIA and Google to assist me in the process.
 #### I researched how other sites display energy usage in charts to determine which type would work best with the data.
 
