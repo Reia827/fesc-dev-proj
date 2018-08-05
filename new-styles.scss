@@ -46,6 +46,7 @@ img {
 
 .header-container {
 	background-image: url(images/header-image.png);
+	width: 50%;
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: left;
@@ -56,7 +57,7 @@ img {
 	justify-content: flex-start;
 	margin-bottom: -15px;
 }
-	
+
 .social-linked-in {
 	position: absolute;
 	top: 50px;
@@ -103,7 +104,7 @@ img {
 	left: 1058px;
 }
 
-.search-container button {	
+.search-container button {
 	&:hover {
 	background: $hover;
 	color: $light;
@@ -201,12 +202,12 @@ img {
 .wrapper-1a {
 		display: grid;
 		/*grid-template-columns: 1fr 2fr 1fr; */
-		grid-template-columns: repeat(2, 1fr); 
+		grid-template-columns: repeat(2, 1fr);
 		grid-gap: 1em;
 		/*grid-auto-rows: 100px;*/
-		grid-auto-rows:minmax(100px, auto); 
-	background-color: $primary;
-	} 
+		grid-auto-rows:minmax(100px, auto);
+		background-color: $primary;
+	}
 
 .wrapper-1a h2 {
 	color: $dark;
@@ -226,7 +227,7 @@ img {
 	letter-spacing: 1px;
 	//font-weight: 100;
 	line-height: 1.3rem;
-} 
+}
 
  .index-box-1 {
 	//background-image: url(images/fact-sheet.jpg);
@@ -234,21 +235,21 @@ img {
 	background-repeat: no-repeat;
 	background-color: rgba(255, 255, 255, 0.7);
   background-blend-mode: lighten;
-} 
+}
 .index-box-2 {
 	//background-color: $primary;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-color: rgba(255, 255, 255, 0.7);
   background-blend-mode: lighten;
-} 
+}
 /* .grid-item .index-box-3 {
 	//background-image: url(images/fact-sheet.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-color: rgba(255, 255, 255, 0.7);
   background-blend-mode: lighten;
-} 
+}
  .grid-item .index-box-4 {
 	//background-image: url(images/fact-sheet.jpg);
 	background-position: center;
@@ -262,7 +263,7 @@ img {
   grid-gap: 15px;
   background-color: $light;
   padding: 15px;
-} 
+}
 
 .index-box-1 {
   grid-column: 1 / span 1;
@@ -315,11 +316,11 @@ img {
 .wrapper-2 {
 		display: grid;
 		/*grid-template-columns: 1fr 2fr 1fr; */
-		grid-template-columns: repeat(3, 1fr); 
+		grid-template-columns: repeat(3, 1fr);
 		grid-gap: 1em;
 		/*grid-auto-rows: 100px;*/
-		grid-auto-rows:minmax(100px, auto); 
-	} 
+		grid-auto-rows:minmax(100px, auto);
+	}
 
 .outreach-showcase {
 	grid-area: showcase;
@@ -355,12 +356,12 @@ img {
 	letter-spacing: 1px;
 	//font-weight: 100;
 	line-height: 1.3rem;
-} 
+}
 
 .outreach-box h3 {
 	font-size: 1.3rem;
 	align-items: center;
-} 
+}
 
  .outreach-box-1 {
 	background-image: url(images/fact-sheet.jpg);
@@ -368,7 +369,7 @@ img {
 	background-repeat: no-repeat;
 	background-color: rgba(255, 255, 255, 0.7);
   background-blend-mode: lighten;
-} 
+}
 
 .outreach-box-2 {
 	background-image: url(images/energy-video-clip.jpg);
@@ -408,7 +409,7 @@ img {
 	background-repeat: no-repeat;
 	background-color: rgba(255, 255, 255, 0.8);
   background-blend-mode: lighten;
-} 
+}
 
 /* People Page */
 
@@ -418,7 +419,7 @@ img {
 	grid-template-areas: repeat(4, 1fr);*/
 	display: grid;
 	/*grid-template-columns: 1fr 2fr 1fr; */
-	grid-template-columns: repeat(4, 1fr); 
+	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 1em;
 	/*grid-auto-rows: 100px;*/
 	grid-auto-rows:minmax(100px, auto);
@@ -438,7 +439,7 @@ img {
 	line-height: 1.3rem;
 }
 
-//.people-box .people-box-4 
+//.people-box .people-box-4
 
 a:hover {
 	background: $hover;
@@ -451,7 +452,7 @@ a:hover {
 	background-repeat: no-repeat;
 	background-color: rgba(255, 255, 255, 0.5);
   background-blend-mode: lighten;
-} 
+}
 
 .people-box-2 {
 	background-image: url(images/reports.jpg);
@@ -476,7 +477,7 @@ a:hover {
 	background-repeat: no-repeat;
   background-blend-mode: lighten;
 }
-	
+
 .people-box-5 {
 	background-image: url(images/leadership.jpg);
 	background-position: center;
@@ -499,7 +500,7 @@ a:hover {
 	background-repeat: no-repeat;
 	background-color: rgba(255, 255, 255, 0.5);
   background-blend-mode: lighten;
-} 
+}
 
 /* Advisory Board */
 
@@ -573,8 +574,8 @@ a:hover {
 	h3 {
 		color: $dark;
 		font-size: 1.5rem;
-	} 
-} 
+	}
+}
 
 
 form .subscribe-button {
@@ -583,7 +584,7 @@ form .subscribe-button {
 	background: $hover;
 	color: $light;
 }
-} 
+}
 
 /* Footer */
 
@@ -593,7 +594,7 @@ footer {
 	color: $dark;
 	text-align: center;
 	padding: 1rem;
-	
+
 }
 
 .end-nav ul {

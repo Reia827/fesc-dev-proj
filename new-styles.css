@@ -29,6 +29,7 @@ img {
 /* Header */
 .header-container {
   background-image: url(images/header-image.png);
+  width: 50%;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left;
@@ -217,7 +218,7 @@ img {
 	background-repeat: no-repeat;
 	background-color: rgba(255, 255, 255, 0.7);
   background-blend-mode: lighten;
-} 
+}
  .grid-item .index-box-4 {
 	//background-image: url(images/fact-sheet.jpg);
 	background-position: center;
@@ -230,7 +231,7 @@ img {
   grid-gap: 15px;
   background-color: $light;
   padding: 15px;
-} 
+}
 
 .index-box-1 {
   grid-column: 1 / span 1;
