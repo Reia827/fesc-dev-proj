@@ -87,7 +87,7 @@ img {
   left: 1058px; }
 
 .search-container button:hover {
-  background: #ff9900;
+  background: #ff6600;
   color: #fff; }
 
 /*Navigation*/
@@ -112,7 +112,7 @@ img {
   -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
           box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8); }
   .main-nav a:hover {
-    background: #ff9900;
+    background: #ff6600;
     color: #fff; }
 
 .showcase {
@@ -159,7 +159,7 @@ img {
   display: none; }
 
 #myBtn:hover {
-  background: #ff9900;
+  background: #ff6600;
   color: #fff; }
 
 /*button {
@@ -409,7 +409,7 @@ img {
   line-height: 1.3rem; }
 
 a:hover {
-  background: #ff9900;
+  background: #ff6600;
   color: #fff; }
 
 .people-box-1 {
@@ -496,7 +496,7 @@ a:hover {
   text-align: center; }
 
 .active, .collapsible:hover {
-  background-color: #ff9900; }
+  background-color: #ff6600; }
 
 .content {
   padding-top: 12px;
@@ -535,7 +535,7 @@ a:hover {
 form .subscribe-button {
   position: absolute; }
   form .subscribe-button:hover {
-    background: #ff9900;
+    background: #ff6600;
     color: #fff; }
 
 /* Footer */
@@ -565,7 +565,7 @@ footer {
   -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
           box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8); }
   .end-nav a:hover {
-    background: #ff9900;
+    background: #ff6600;
     color: #fff; }
 
 /* Media Queries */

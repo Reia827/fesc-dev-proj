@@ -4,7 +4,7 @@
 	$green: #003300; //some caption text
 	$shadow:0 1px 5px rgba(104, 104, 104, 0.8);
 	$btn: $dark; //was spicy mustard
-	$hover: #ff9900; //#ffa500 orange #d8ae47 spicy mustard
+	$hover: #ff6600; //#ffa500 orange #d8ae47 spicy mustard
 
 @mixin btn {
 	background-color: $btn;
