@@ -180,7 +180,9 @@ img {
   grid-gap: 1em;
   /*grid-auto-rows: 100px;*/
   grid-auto-rows: minmax(100px, auto);
-  background-color: #B4B7BA; }
+  background-color: #a6b8c9;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8); }
 
 .wrapper-1a h2 {
   color: #333;
@@ -508,6 +510,27 @@ a:hover {
   background-color: #fff;
   color: #333;
   width: 100%; }
+
+/* API */
+/* back to charts */
+.api {
+  background-color: #fff;
+  padding-top: 1rem;
+  margin-left: 1.5rem; }
+
+.api-btn {
+  background: #333;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  padding: .8rem; }
+  .api-btn:hover {
+    background: #ff6600;
+    color: #fff; }
 
 /* Newsletter */
 .email-container {

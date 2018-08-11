@@ -1,4 +1,5 @@
 //js code found online in GitHub, I wasn't able to figure it out on my own. I worked through this assignment and then tried to dissect the source code, but the js still isn't entirely clear to me. I used my own API key and updated color scheme.
+//data2 file replaces this one
 
 google.charts.load('current', {packages: ['corechart']});
 google.charts.setOnLoadCallback(getLineData);

@@ -206,7 +206,8 @@ img {
 		grid-gap: 1em;
 		/*grid-auto-rows: 100px;*/
 		grid-auto-rows:minmax(100px, auto);
-		background-color: $primary;
+		background-color: #a6b8c9;
+		box-shadow: $shadow;
 	}
 
 .wrapper-1a h2 {
@@ -555,6 +556,30 @@ a:hover {
   background-color: $light;
 	color: $dark;
 	width: 100%;
+}
+
+/* API */
+/* back to charts */
+
+.api {
+	background-color: $light;
+	padding-top: 1rem;
+	margin-left: 1.5rem;
+}
+.api-btn{
+	background: $dark;
+	text-decoration: none;
+	text-align: center;
+	color: $light;
+	text-transform: uppercase;
+	font-size: 1rem;
+	box-shadow: $shadow;
+	padding: .8rem;
+
+	&:hover {
+	background: $hover;
+	color: $light;
+	}
 }
 
 /* Newsletter */
